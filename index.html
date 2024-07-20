@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    
+    <title>Observações NF</title>
+</head>
+<body>
+    <section>
+        <div class="conteiner">
+
+                <h1>Observações Plaster</h1>
+
+                <input class="infoInput" type="number" name="pesoCarreta" id="tonelada" placeholder="Peso liquido">
+                <input class="infoInput" type="text" name="placaVeiculo" id="placa" placeholder="Placa do veiculo">
+                <input class="infoInput" type="text" name="nomeMotorista" id="nomeMotorista" placeholder="Nome do motorista">
+                <input class="infoInput" type="number" name="cpfCondutor" id="cpfCondutor" placeholder="CPF do condutor">
+
+                <select id="destino">
+                    <option value="">Selecione uma opção</option>
+                    <option value="ARCOS - MG OBRA: 3 - PEDIDO BRITA- TICKET: 44685 ">ARCOS - MG</option>
+                    <option value="ELISABETH - PB OBRA: 3 - PEDIDO BRITA- TICKET: 44685 ">ELISABETH - PB</option>
+                    <option value="MONTES CLAROS - MG">MONTES CLAROS - MG</option>
+                    <option value="COCALZINHO - GO">COCALZINHO - GO</option>
+                    <option value="CANDEIAS - BA">CANDEIAS - BA</option>
+                    <option value="VITORIA - ES">VITORIA - ES</option>
+                    <option value="IJACI - MG">IJACI - MG</option>
+                </select>
+
+                <button onclick="armazenarValor()">Gerar observação</button>
+        </div>
+
+        <div class="armazenamento">
+            <h2>Salvar informações</h2>
+            <textarea class="salvarDados" name="" id=""></textarea>
+            <textarea id="textarea1" class="salvarDados" name="" id=""></textarea>
+            <textarea id="textarea2" class="salvarDados" name="" id=""></textarea>
+        </div>
+
+        <p id="resultado"></p> 
+
+        
+    </section>
+    
+<script src="./index.js"></script>   
+</body>
+</html>
