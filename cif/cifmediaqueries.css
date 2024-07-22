@@ -1,18 +1,14 @@
 @media (max-width: 600px) {
 
+    section p{
+        width: 400px;
+        height: 200px;
+    }
+
     .infoInput{
         padding-left: 10px;
         width: 200px;
         height:30px;
-    }
-
-    #textarea1, #textarea2{
-        display: none;
-    }
-
-    section p{
-        width: 450px;
-        height: 250px;
     }
 
     select{

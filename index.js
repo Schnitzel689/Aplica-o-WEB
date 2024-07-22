@@ -63,3 +63,32 @@ function formatCPF(cpf) {
         return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{0,2})/, '$1.$2.$3-$4');
     }
 }
+
+function copiarTexto() {
+    // Seleciona o elemento que contém o texto a ser copiado
+    var elemento = document.getElementById('resultado');
+
+    // Cria um elemento input (pode ser fora do viewport)
+    var input = document.createElement('input');
+    input.setAttribute('value', elemento.textContent);
+
+    // Anexa o elemento input ao body
+    document.body.appendChild(input);
+
+    // Seleciona o conteúdo do input
+    input.select();
+
+    // Copia o conteúdo selecionado
+    document.execCommand('copy');
+
+    // Remove o input do DOM
+    document.body.removeChild(input);
+
+    // Feedback opcional para o usuário
+    alert('Texto copiado para a área de transferência!');
+}
+
+document.addEventListener('contextmenu', function(e) {
+    // bloquear o botão direito na página
+    e.preventDefault();
+});

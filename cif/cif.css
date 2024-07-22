@@ -4,11 +4,38 @@
 }
 
 body{
-    background: url(./images/background1.png);
+    background: url(../images/background1.png);
     background-repeat: no-repeat;
     background-color:  rgb(61, 61, 255);
     font-family: Poppins;
-    padding-bottom: 100px;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner h1{
+    font-size: 40px;
+    color: white;
+}
+
+.conteiner h2{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.conteiner h2 span{
+    font-weight: 300;
+}
+
+.conteiner h2 span:hover{
+    color: yellow;
+    font-weight: bold;
 }
 
 nav{
@@ -28,19 +55,6 @@ nav a{
 
 nav a:hover{
     transform: scale(1.2);
-}
-
-.conteiner{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.conteiner h1{
-    font-size: 40px;
-    color: white;
 }
 
 section{

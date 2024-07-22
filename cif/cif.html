@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="cif.css">
+    <link rel="stylesheet" href="cifmediaqueries.css">  
+    <title>
+        Observação CIF
+    </title>
+</head>
+<body>
+    <nav>
+        <a href="./cif.html">Observação CIF</a>
+        <a href="../index.html">Observação Plaster</a>
+    </nav>
+<section>
+    <div class="conteiner">
+        <h1>Observações CIF</h1>
+        <h2>Lembrar seguradora<br> 
+            <span>CNPJ: 61573796000166 Apólice para ser digitada na MDF nº: 5177202441210000100</span>
+        </h2>
+
+        <input class="infoInput" type="number" name="tonelada" id="tonelada" placeholder="Tonelada">
+
+        <select id="destino">
+            <option value="">Selecione uma opção</option>
+            <option value="155">SÃO JOSE - IGARASSU - PE</option>
+            <option value="145">CBMC - CABO DE SANTO AGOSTINHO - PE</option>
+            <option value="140">VALOBRAS - CANDEIAS -BA</option>
+            <option value="225">INTERCEMENT - SANTANA DO PARAISO - MG</option>
+            <option value="155">USINA UNIAO - PRIMAVERA - PE</option>
+            <option value="155">USINA TRAPICHE - SIRINHAEM - PE</option>
+            <option value="115">COMVAP - UNIAO - PI</option>
+        </select>
+        <div class="buttons">
+            <button onclick="armazenarValor()">Gerar observação</button>
+            <button onclick="copiarTexto()">Copiar Texto</button>
+        </div>
+
+        <p id="resultado"></p>
+    </div>
+</section>
+<script src="./cif.js"></script>    
+</body>
+</html>
