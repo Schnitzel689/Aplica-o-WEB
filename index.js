@@ -44,7 +44,7 @@ function armazenarValor() {
     DO IMPOSTO-DECRETO N-45.574/2018- B. CALCULO ${calculoUmFormatado} - PERC.(ICMS 30%) ${calculoDoisFormatado} PLACA: ${placa} MOTORISTA: ${nomeMotorista} CPF: ${cpfForm} ETC. DESTINO: ${destinoSelecionado}`;
 
     let elementoP = document.getElementById('resultado');
-    elementoP.textContent = mensagem;
+    elementoP.textContent = mensagem.toUpperCase();
 
 }
 

@@ -20,7 +20,7 @@ function armazenarValor() {
     console.log(mensagem)
 
     const elementoP = document.getElementById('resultado');
-    elementoP.textContent = mensagem;
+    elementoP.textContent = mensagem.toUpperCase();
 }
 
 function copiarTexto() {
@@ -38,6 +38,26 @@ function copiarTexto() {
     document.body.removeChild(input);
 
     alert('Texto copiado para a área de transferência!');
+}
+
+
+
+
+
+
+function Rpa(){
+    var inputElementPlaca = document.getElementById('placa');
+    var placa = inputElementPlaca.value;
+
+    var inputElementNf = document.getElementById('nf');
+    var notaFiscal = inputElementNf.value.toUpperCase();
+
+    const mensagemRpa = `REF PAGAMENTO FRETE AUTÔNOMO EMBARQUE NF-es Nº ${notaFiscal} EMITIDAS EM ${dataFormatada} ATRAVÉS DE BOLETO BANCARIO DO BANCO BRADESCO. PLACA DO VEICULO: ${placa}`
+
+    const elementoP = document.getElementById('resultadoRPA');
+    elementoP.textContent = mensagemRpa.toUpperCase();
+    
+
 }
 
 function copiarTextorpa() {
@@ -58,30 +78,6 @@ function copiarTextorpa() {
 }
 
 
-
-
-document.addEventListener('contextmenu', function(e) {
-    // bloquear o botão direito na página
-    e.preventDefault();
-});
-
-
-function Rpa(){
-    var inputElementPlaca = document.getElementById('placa');
-    var placa = inputElementPlaca.value;
-
-    var inputElementNf = document.getElementById('nf');
-    var notaFiscal = inputElementNf.value;
-
-    const mensagemRpa = `REF PAGAMENTO FRETE AUTÔNOMO EMBARQUE NF-es Nº ${notaFiscal} EMITIDAS EM ${dataFormatada} ATRAVÉS DE BOLETO BANCARIO DO BANCO BRADESCO. PLACA DO VEICULO: ${placa}`
-
-    const elementoP = document.getElementById('resultadoRPA');
-    elementoP.textContent = mensagemRpa;
-    
-
-}
-
-
 function formatarDataBrasileira(data) {
     const dia = String(data.getDate()).padStart(2, '0');
     const mes = String(data.getMonth() + 1).padStart(2, '0');
@@ -94,3 +90,9 @@ const dataAtual = new Date();
 
 // Formata a data no formato brasileiro
 const dataFormatada = formatarDataBrasileira(dataAtual);
+
+
+document.addEventListener('contextmenu', function(e) {
+    // bloquear o botão direito na página
+    e.preventDefault();
+});
