@@ -18,9 +18,10 @@ body{
     justify-content: center;
 }
 
-.conteiner h1{
+.titulo{
     font-size: 40px;
     color: white;
+    text-align: center;
 }
 
 .conteiner h2{
@@ -80,7 +81,7 @@ section p{
     background-color: whitesmoke;
 }
 
-.conteiner button{
+section button{
     border: none;
     border-radius: 20px;
     width: 200px;
@@ -91,7 +92,7 @@ section p{
     transition: 0.5s ease;
 }
 
-    .conteiner button:hover{
+    section button:hover{
         background-color: #7c82ec;
     }
 
@@ -106,7 +107,14 @@ select{
     height: 40px;
     text-align: center;
     background-color: #abaeed;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
+
+    select:hover{
+        background-color: #7c82ec;
+    }
+
 
 .salvarDados{
     width: 300px;
@@ -116,5 +124,12 @@ select{
 .armazenamento h2{
     color: white;
     text-align: center;
+}
+
+#buttonsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 

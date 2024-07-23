@@ -92,6 +92,12 @@ select{
     height: 40px;
     text-align: center;
     background-color: #abaeed;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+select:hover{
+    background-color: #7c82ec;
 }
 
 .salvarDados{

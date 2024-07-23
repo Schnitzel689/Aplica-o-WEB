@@ -40,8 +40,57 @@ function copiarTexto() {
     alert('Texto copiado para a área de transferência!');
 }
 
+function copiarTextorpa() {
+    var elemento = document.getElementById('resultadoRPA');
+
+    var input = document.createElement('input');
+    input.setAttribute('value', elemento.textContent);
+
+    document.body.appendChild(input);
+
+    input.select();
+
+    document.execCommand('copy');
+
+    document.body.removeChild(input);
+
+    alert('Texto copiado para a área de transferência!');
+}
+
+
+
+
 document.addEventListener('contextmenu', function(e) {
     // bloquear o botão direito na página
     e.preventDefault();
 });
 
+
+function Rpa(){
+    var inputElementPlaca = document.getElementById('placa');
+    var placa = inputElementPlaca.value;
+
+    var inputElementNf = document.getElementById('nf');
+    var notaFiscal = inputElementNf.value;
+
+    const mensagemRpa = `REF PAGAMENTO FRETE AUTÔNOMO EMBARQUE NF-es Nº ${notaFiscal} EMITIDAS EM ${dataFormatada} ATRAVÉS DE BOLETO BANCARIO DO BANCO BRADESCO. PLACA DO VEICULO: ${placa}`
+
+    const elementoP = document.getElementById('resultadoRPA');
+    elementoP.textContent = mensagemRpa;
+    
+
+}
+
+
+function formatarDataBrasileira(data) {
+    const dia = String(data.getDate()).padStart(2, '0');
+    const mes = String(data.getMonth() + 1).padStart(2, '0');
+    const ano = data.getFullYear();
+
+    return `${dia}/${mes}/${ano}`;
+}
+
+const dataAtual = new Date();
+
+// Formata a data no formato brasileiro
+const dataFormatada = formatarDataBrasileira(dataAtual);

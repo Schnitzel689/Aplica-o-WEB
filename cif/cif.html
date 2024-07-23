@@ -20,7 +20,7 @@
     </nav>
 <section>
     <div class="conteiner">
-        <h1>Observações CIF</h1>
+        <h1 class="titulo">Observações CIF</h1>
         <h2>Lembrar seguradora<br> 
             <span>CNPJ: 61573796000166 Apólice para ser digitada na MDF nº: 5177202441210000100</span>
         </h2>
@@ -41,8 +41,20 @@
             <button onclick="armazenarValor()">Gerar observação</button>
             <button onclick="copiarTexto()">Copiar Texto</button>
         </div>
-
         <p id="resultado"></p>
+    </div>
+
+    <div class="conteiner2">
+        <h3 class="titulo" >RPA</h3>
+        <div>
+            <input class="infoInput" type="text" id="placa" placeholder="Placa">
+            <input class="infoInput" type="text" id="nf" placeholder="Notas fiscais">
+        </div>
+        <div id="buttonsection">
+            <button id="rpaButton" onclick="Rpa()">Gerar observação</button>
+            <button onclick="copiarTextorpa()">Copiar Texto</button>
+            <p id="resultadoRPA"></p>
+        </div>
     </div>
 </section>
 <script src="./cif.js"></script>    
