@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(../images/background1.png);
+    background-repeat: no-repeat;
+    background-color:  rgb(61, 61, 255);
+    font-family: Poppins;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.conteiner h2{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.conteiner h2 span{
+    font-weight: 300;
+}
+
+.conteiner h2 span:hover{
+    color: yellow;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgb(46, 46, 252);
+    padding: 20px 0px 20px 0px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+nav a:hover{
+    transform: scale(1.2);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section p{
+    width: 600px;
+    height: 150px;
+    background-color: #abaeed;
+    text-transform: uppercase;
+}
+
+
+.infoInput{
+    padding-left: 10px;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+section button{
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    background-color: #abaeed;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+    section button:hover{
+        background-color: #7c82ec;
+    }
+
+.infoInput::placeholder{
+    padding-left: 20px;
+}
+
+select{
+    border: none;
+    border-radius: 15px;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    background-color: #abaeed;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+    select:hover{
+        background-color: #7c82ec;
+    }
+
+
+.salvarDados{
+    width: 300px;
+    height: 100px;
+}
+
+.armazenamento h2{
+    color: white;
+    text-align: center;
+}
+
+#buttonsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#imposto{
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gnre.css">
+    <link rel="stylesheet" href="../cif/cifmediaqueries.css">
+    <title>GNRE</title>
+</head>
+<body>
+    <nav>
+        <a href="../cif/cif.html">Observação CIF</a>
+        <a href="../index.html">Observação Plaster</a>
+        <a href="./gnre.html">Observação GNRE</a>
+    </nav>
+
+    <section>
+        <div class="conteiner">
+            <h1 class="titulo">Observação GNRE</h1>
+
+            <input class="infoInput" type="number" name="valorNF" id="valorNF" placeholder="Valor da nota fiscal">
+
+            <select id="estado">
+                <option value="">Selecione uma opção</option>
+                <option value="MA">MA</option>
+                <option value="GO">GO</option>
+                <option value="BA">BA</option>
+                <option value="PR">PR</option>
+                <option value="SC">SC</option>
+                <option value="RN">RN</option>
+                <option value="AP, MG e SP">AP, MG e SP</option>
+                <option value="RO">RO</option>
+                <option value="AC, AL, PA e SE">AC, AL, PA e SE</option>
+                <option value="AM, CE, TO, DF, PB, RJ e RR">AM, CE, TO, DF, PB, RJ e RR</option>
+                <option value="PI">PI</option>
+                <option value="ES, MT, MS e RS">ES, MT, MS e RS</option>     
+            </select>
+            <div class="buttons">
+                <button onclick="armazenarValor()">Gerar observação</button>
+                <button onclick="copiarTexto()">Copiar Texto</button>
+            </div>
+            <p id="imposto"></p>
+            <p id="resultado"></p>
+        </div>
+    </section>
+
+<script src="./gnre.js"></script>    
+</body>
+</html>
