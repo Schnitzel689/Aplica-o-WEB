@@ -4,24 +4,24 @@
 }
 
 body{
-    background: url(./images/background1.png);
-    background-repeat: no-repeat;
-    background-color:  rgb(61, 61, 255);
+    background-image: url(./images/background.svg) ;
+    background-size: cover;
+    background-color: #183caa;
     font-family: Poppins;
     padding-bottom: 100px;
 }
 
 nav{
-    display: flex;
+    display: flex;  
     justify-content: center;
     gap: 50px;
-    background-color: rgb(46, 46, 252);
+    background-color: rgb(218, 218, 218);
     padding: 20px 0px 20px 0px;
 }
 
 nav a{
     text-decoration: none;
-    color: white;
+    color: #183caa;
     font-weight: bold;
     transition: transform 0.2s ease;
 }
@@ -64,6 +64,8 @@ section p{
     border: none;
     border-radius: 20px;
     background-color: whitesmoke;
+    font-family: Poppins;
+    font-weight: bold;
 }
 
 .conteiner button{
@@ -75,6 +77,8 @@ section p{
     background-color: #abaeed;
     cursor: pointer;
     transition: 0.5s ease;
+    font-family: Poppins;
+    font-weight: bold;
 }
 
     .conteiner button:hover{
@@ -94,6 +98,8 @@ select{
     background-color: #abaeed;
     cursor: pointer;
     transition: 0.3s ease;
+    font-family: Poppins;
+    font-weight: bold;
 }
 
 select:hover{
